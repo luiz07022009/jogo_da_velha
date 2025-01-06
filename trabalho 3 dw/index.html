@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jogodavelha.js"></script>
+    <link rel="stylesheet" href="./css/stilo.css">
+    <link rel="shortcut icon" href="./imgs/jogovelhalogobranca.png" image/x-icon">
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="./imgs/jogovelhalogobranca.png" alt="" class="imgheader">
+            <nav>
+                <a href="#historia">História</a>
+                <a href="#jogodavelha">Jogo da Velha</a>
+                <a href="#regras">Regras</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="historia">
+        <h1 class="historiatitulo">História</h1>
+        <div class="historia-conteudo">
+            <img src="./imgs/historiajogovelha1.jpg" alt="" class="historiaimg">
+            <div class="historia-texto">
+                <p class="historia-paragrafo">
+                    O jogo se tornou popular na Inglaterra, durante o século XIX, quando mulheres se reuniam com amigas
+                    para conversar e fazer bordados. No entanto, assim que ficavam mais velhas, alguma delas tinham
+                    dificuldade de costurar por causa do problema nas vistas.
+                    Sendo assim, passaram a utilizar botões não utilizados, ou tabuleiros improvisados, para disputar a
+                    partida de “noughts and crosses” (ou “nós e cruzes”, em português). O nome fazia uma referência
+                    direta a termos comuns na prática do bordado.
+                    Ademais, como as adeptas ao jogo eram principalmente senhoras idosas, quando chegou ao Brasil o
+                    passatempo ganhou o nome de “jogo da velha”.
+                    Apesar disso, escavações arqueológicas indicam que já no século XIV a.C., o jogo já existia em áreas
+                    do Antigo Egito. Além disso, passatempos similares também existiam em regiões da China Antiga,
+                    América pré-colombiana e Império Romano.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="jogodavelha">
+        <h1>Jogo da Velha</h1>
+        <div id="container">
+            <div class="board">
+                <div class="cell" onclick="makeMove(this)"></div>
+                <div class="cell" onclick="makeMove(this)"></div>
+                <div class="cell" onclick="makeMove(this)"></div>
+                <div class="cell" onclick="makeMove(this)"></div>
+                <div class="cell" onclick="makeMove(this)"></div>
+                <div class="cell" onclick="makeMove(this)"></div>
+                <div class="cell" onclick="makeMove(this)"></div>
+                <div class="cell" onclick="makeMove(this)"></div>
+                <div class="cell" onclick="makeMove(this)"></div>
+            </div>
+            <div>
+                <button onclick="resetGame()" id="botao">Reiniciar Jogo</button>
+                <p id="message"></p>
+            </div>
+        </div>
+
+    </section>
+    <section id="regras">
+        <h1 class="regrastitulo">Regras</h1>
+        <div class="regrasconteudo">
+            <img src="./imgs/regras.png" alt="" class="regrasimg">
+            <div class="regras-texto">
+                <p class="regras-paragrafo">
+                    Para jogar, é preciso organizar um tabuleiro simples, com três linhas e colunas determinadas em uma
+                    grade. Elas podem estar previamente apresentadas num tabuleiro, mas também marcadas em quaisquer
+                    superfícies preparadas de improviso para a disputa da partida.
+                    Cada um dos jogadores escolhe um símbolo ( geralmente divididos em X e O ) e devem, alternadamente,
+                    preencher um dos espaços vazios da grande. Para vencer, um dos jogadores deve conseguir formar uma
+                    linha de três símbolos iguais consecutivos, seja numa linha vertical, horizontal o diagonal.
+                    O primeiro jogador a conseguir formar a linha de três é o vencedor. Por outro lado, se o jogo acabar
+                    sem ninguém alcançar seu objetivo, diz-se que o jogo “deu velha”, ou seja, terminou com empate.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="footer">
+        <img src="./imgs/jogovelhalogobranca.png" alt="logo" class="imgfooter">
+        <p class="textofooter">Desenvolvido por: <a href="https://github.com/Louiz008">Luiz</a> e <a
+                href="https://github.com/Qlqr1">Gustavo G.</a></p>
+        <img src="./imgs/ifclogobranca.png" alt="ifc" class="ifcfooter">
+    </section>
+</body>
+
+</html>
