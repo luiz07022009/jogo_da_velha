@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="shortcut icon" href="./imgs/jogovelhalogobranca.png" image/x-icon">
     <title>Jogo da Velha</title>
 </head>
-
 <body>
     <header>
         <div class="header">
@@ -21,8 +19,6 @@
             </nav>
         </div>
     </header>
-
-
     <section id="historia">
         <h1 class="historiatitulo">História</h1>
         <div class="historia-conteudo">
@@ -60,11 +56,12 @@
                 <div class="cell" onclick="makeMove(this)"></div>
             </div>
             <div>
+                <p id="turn-message">Vez do jogador: <span id="current-player"></span></p>
                 <button onclick="resetGame()" id="botao">Reiniciar Jogo</button>
                 <p id="message"></p>
             </div>
         </div>
-
+    </section>
     </section>
     <section id="regras">
         <h1 class="regrastitulo">Regras</h1>
@@ -92,5 +89,4 @@
         <img src="./imgs/ifclogobranca.png" alt="ifc" class="ifcfooter">
     </section>
 </body>
-
 </html>
