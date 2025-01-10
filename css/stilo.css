@@ -1,0 +1,280 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #f0f0f0;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../imgs/Jogodavelha.png');
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.imgheader {
+  width: 130px;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-self: flex-end;
+  align-self: center;
+  align-items: center;
+}
+
+#historia {
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.historia-conteudo {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.historiaimg {
+  display: flex;
+  max-width: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  padding-left: 20px;
+}
+
+.historia-texto {
+  max-width: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.historiatitulo {
+  display: flex;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.historia-paragrafo {
+  font-size: 23px;
+  line-height: 1.5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .historia-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .historia-img,
+  .historia-texto {
+    max-width: 100%;
+  }
+
+  .historia-titulo {
+    font-size: 1.5rem;
+  }
+
+  .historia-paragrafo {
+    font-size: 0.9rem;
+  }
+}
+
+#jogodavelha {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.cell:hover {
+  background-color: #e0e0e0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+#turn-message {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#current-player {
+  color: #333;
+  font-weight: bold;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+#regras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.regrastitulo {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.regrasconteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.regrasimg {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.regras-texto {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 150%;
+  padding-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+.textofooter {
+  color: white;
+  align-self: center;
+  font-size: 25px;
+}
+
+.textofooter a {
+  text-decoration: none;
+  color: white;
+}
+
+.textofooter a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+#divbotaocomeco {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  background-color: #000000;
+}
+
+#botaocomeco {
+  font-size: 1em;
+  background-color: #464646;
+  color: white;
+  display: flex;
+  border-radius: 50px;
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  border: none;
+  border: 2px solid black;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.6s;
+}
+
+#botaocomeco:hover {
+  background-color: #787878;
+  border: 2px solid black;
+  text-decoration: none;
+}
+
+#textobotaocomeco {
+  font-size: 1.25em;
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+}
