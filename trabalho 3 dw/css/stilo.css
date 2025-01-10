@@ -94,7 +94,6 @@ nav{
     text-align: justify;
   }
   
-  /* Responsividade */
   @media (max-width: 768px) {
     .historia-conteudo {
       flex-direction: column;
@@ -171,7 +170,7 @@ button {
     margin-top: 20px;
     font-size: 1.2em;
 }
-/* Estilo da seção regras */
+
 #regras {
   display: flex;
   flex-direction: column;
@@ -181,13 +180,11 @@ button {
   padding: 20px; 
 }
 
-/* Estilo do título */
 .regrastitulo {
   font-size: 40px; 
   margin-bottom: 20px;  
 }
 
-/* Estilo do conteúdo da seção */
 .regrasconteudo {
   display: flex;
   flex-direction: column;
@@ -197,14 +194,12 @@ button {
   width: 100%; 
 }
 
-/* Estilo da imagem */
 .regrasimg {
   width: 100%; 
   height: auto; 
   border-radius: 10px;
 }
 
-/* Estilo do texto */
 .regras-texto {
   text-align: center; 
   font-size: 20px;
